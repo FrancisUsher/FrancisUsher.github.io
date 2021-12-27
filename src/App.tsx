@@ -3,6 +3,8 @@ import CssBaseline from "@mui/material/CssBaseline";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import { useMemo } from "react";
+import { jobs } from "./resume";
+import JobsLayout from "./components/JobsLayout";
 
 function App() {
   const prefersDarkMode = useMediaQuery("(prefers-color-scheme: dark)");
@@ -22,9 +24,9 @@ function App() {
       <CssBaseline enableColorScheme />
       <div className="App">
         <header className="App-header">
-          <Typography variant="h1">stuff</Typography>
+          <Typography variant="h3">Francis' Resume</Typography>
         </header>
-        <div>body content</div>
+        <JobsLayout jobs={jobs}></JobsLayout>
       </div>
     </ThemeProvider>
   );

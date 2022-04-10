@@ -3,7 +3,7 @@ import CssBaseline from "@mui/material/CssBaseline";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import { useMemo } from "react";
-import { jobs, resumeItems } from "./resume";
+import { jobs } from "./resume";
 import JobsLayout from "./components/JobsLayout";
 
 function App() {
@@ -26,7 +26,7 @@ function App() {
         <header className="App-header">
           <Typography variant="h3">Francis' Resume</Typography>
         </header>
-        <JobsLayout jobs={jobs} resumeItems={resumeItems}></JobsLayout>
+        <JobsLayout jobs={jobs}></JobsLayout>
       </div>
     </ThemeProvider>
   );

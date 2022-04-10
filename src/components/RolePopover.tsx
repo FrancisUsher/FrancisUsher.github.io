@@ -1,4 +1,5 @@
 import { Paper, Popover, Typography } from "@mui/material";
+import { Role } from "../resume";
 import { format } from "date-fns";
 import { useState, MouseEvent } from "react";
 

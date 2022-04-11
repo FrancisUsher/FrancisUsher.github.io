@@ -24,7 +24,7 @@ function App() {
       <CssBaseline enableColorScheme />
       <div className="App">
         <header className="App-header">
-          <Typography variant="h3">Francis' Resume</Typography>
+          <Typography variant="h3">Francis' Awesome Resume</Typography>
         </header>
         <JobsLayout jobs={jobs}></JobsLayout>
       </div>
